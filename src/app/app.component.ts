@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import axios from 'axios';
 
 @Component({
   selector: 'app-root',
@@ -8,17 +9,26 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'My First Angular Site';
   message = 'Welcome to this site.';
-  employees:any = [];
+  employees: any = [];
 
   constructor() {
-    this.employees = [
-      {
-        firstName: 'Frank'
-      },
-      {
-        firstName: 'Thomas'
-      }
-    ];
+
+    (async () => {
+      this.employees = (await axios.get('https://edwardtanguay.vercel.app/share/employees.json')).data;
+    })();
+
+    // this.employees = [
+    //   {
+    //     firstName: 'Frank',
+    //     lastName: 'Holander',
+    //     notes: 'frank\'s notes'
+    //   },
+    //   {
+    //     firstName: 'Thomas',
+    //     lastName: 'Schmidt',
+    //     notes: 'thomas\' notes'
+    //   }
+    // ];
 
 
   }

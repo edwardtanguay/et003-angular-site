@@ -7,5 +7,5 @@
 <h2>There are {{employees.length}} employees:</h2>
 
 <div *ngFor="let employee of employees">
-	<div>{{employee.firstName}}</div>
+	<app-info-box title={{employee.lastName}} body={{employee.notes}}></app-info-box>
 </div>
