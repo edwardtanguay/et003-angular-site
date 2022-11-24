@@ -1,0 +1,2 @@
+- .. info-box prop: "level"
+	- if "important" title is red

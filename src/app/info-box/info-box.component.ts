@@ -8,4 +8,5 @@ import { Component,Input } from '@angular/core';
 export class InfoBoxComponent {
   @Input() title = 'Info Box';
   @Input() body = '(content coming soon...)';
+  @Input() level = 'normal'
 }
