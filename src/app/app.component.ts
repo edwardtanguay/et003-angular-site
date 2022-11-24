@@ -8,4 +8,18 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'My First Angular Site';
   message = 'Welcome to this site.';
+  employees:any = [];
+
+  constructor() {
+    this.employees = [
+      {
+        firstName: 'Frank'
+      },
+      {
+        lastName: 'Hollander'
+      }
+    ];
+
+
+  }
 }

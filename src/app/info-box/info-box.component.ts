@@ -9,4 +9,5 @@ export class InfoBoxComponent {
   @Input() title = 'Info Box';
   @Input() body = '(content coming soon...)';
   @Input() level = 'normal'
+
 }

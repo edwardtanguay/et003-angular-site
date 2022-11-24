@@ -1,2 +1,4 @@
-- .. info-box prop: "level"
-	- if "important" title is red
+- x info-box prop: "level"
+	- x if "important" title is red
+- get employee array via api
+	- create for each employee info-box with title = firstName/lastName, body = notes
