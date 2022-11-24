@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'et003-angular-site';
+  title = 'My First Angular Site';
+  message = 'Welcome to this site.';
 }
