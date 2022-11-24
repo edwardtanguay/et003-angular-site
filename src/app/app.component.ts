@@ -16,7 +16,7 @@ export class AppComponent {
         firstName: 'Frank'
       },
       {
-        lastName: 'Hollander'
+        firstName: 'Thomas'
       }
     ];
 
