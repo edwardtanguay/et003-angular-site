@@ -14,7 +14,15 @@ export class AppComponent {
   constructor() {
 
     (async () => {
-      this.employees = (await axios.get('https://edwardtanguay.vercel.app/share/employees.json')).data;
+      const rawEmployees = (await axios.get('https://edwardtanguay.vercel.app/share/employees.json')).data;
+
+      rawEmployees.forEach((rawEmployee: any) => {
+        this.employees.push({
+          fullName: rawEmployee.firstName + ' ' + rawEmployee.lastName,
+          notes: rawEmployee.notes
+        })
+      })
+
     })();
 
     // this.employees = [
